@@ -20,8 +20,8 @@ function get_github_profile_infos() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      user_name.textContent = data.user_name
-      user_bio.textContent = data.user_bio
+      user_name.textContent = data.name
+      user_bio.textContent = data.bio
       user_photo.src = data.avatar_url
       user_login.textContent=data.login 
     })
